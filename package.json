@@ -6,7 +6,12 @@
   "author": "LeungJZ",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel index.html --no-cache --open"
+    "dev": "parcel index.html --no-cache --open",
+    "dev:index": "parcel index.html --no-cache --open",
+    "dev:mobile": "parcel mobile.html --no-cache --open",
+    "build:index": "parcel build index.html -d build --detailed-report --no-cache",
+    "build:mobile": "parcel build mobile.html -d build/mobile --public-url ./ --out-file index.html --detailed-report --no-cache",
+    "build": "rm -rf build && npm run build:index && npm run build:mobile"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
