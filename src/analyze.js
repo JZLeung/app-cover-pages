@@ -26,15 +26,16 @@ if (process.env.NODE_ENV !== 'development') {
   </script>
   <!-- 腾讯统计  -->
   <script>
-    var _mtac = {};
-    (function() {
-      var mta = document.createElement('script');
-      mta.src = '//pingjs.qq.com/h5/stats.js?v2.0.4';
-      mta.setAttribute('name', 'MTAH5');
-      mta.setAttribute('sid', '500710256');
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(mta, s);
-    })();
+  	var _mtac = {"senseQuery":1};
+  	(function() {
+  		var mta = document.createElement("script");
+  		mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
+  		mta.setAttribute("name", "MTAH5");
+  		mta.setAttribute("sid", "500710256");
+  		mta.setAttribute("cid", "500710257");
+  		var s = document.getElementsByTagName("script")[0];
+  		s.parentNode.insertBefore(mta, s);
+  	})();
   </script>
   <!-- 腾讯热点图 -->
   <script type="text/javascript" src="//pingjs.qq.com/h5/hotclick.js?v2.0" name="mtah5hotclick" sid="500710256" hid="5e3a92432ef95"></script>

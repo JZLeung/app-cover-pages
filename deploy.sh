@@ -1,5 +1,6 @@
 #!/bin/bash
 
+yarn build
 tar -zcf cover.tar.gz ./build/*
 
 server='root@www.baishew.com'
