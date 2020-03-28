@@ -1,6 +1,6 @@
 {
   "name": "cover-index",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "封面app网站首页",
   "main": "index.js",
   "author": "LeungJZ",
@@ -11,7 +11,7 @@
     "dev:mobile": "parcel mobile.html --no-cache --open",
     "build:index": "parcel build index.html -d build --detailed-report --no-cache",
     "build:mobile": "parcel build mobile.html -d build/mobile --public-url ./ --out-file index.html --detailed-report --no-cache",
-    "build": "rm -rf build && npm run build:index && npm run build:mobile"
+    "build": "rm -rf build && npm run build:index"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
