@@ -1,3 +1,5 @@
+import './copyright.scss';
+
 if (process.env.NODE_ENV !== 'development') {
   document.write(`
 <!-- Global site tag (gtag.js) - Google Analytics -->
