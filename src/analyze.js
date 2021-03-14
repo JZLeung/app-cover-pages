@@ -46,7 +46,7 @@ if (process.env.NODE_ENV !== 'development') {
 
   window.downloadAPK = function() {
     MtaH5 && MtaH5.clickStat('download');
-    window.location.href = 'http://cdn.baishew.com/app/cover/cover_0.0.3.apk';
+    window.location.href = 'https://appgallery.huawei.com/#/app/C101971237';
   };
 } else {
   window.downloadAPK = function() {};
